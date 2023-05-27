@@ -6,9 +6,9 @@ function App() {
 
   return (
     <>
-      <div
-        className={`bg-white dark:bg-gray-800 ${isDarkMode ? "dark" : ""}`}
-      ></div>
+      <div className={`bg-white dark:bg-gray-800 ${isDarkMode ? "dark" : ""}`}>
+        <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
+      </div>
     </>
   );
 }
