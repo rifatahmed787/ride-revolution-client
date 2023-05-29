@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import colorLogo from "../../assets/Halal-Restaurant-Main-Logo-02.png";
+import colorLogo from "../../assets/logo/brand-color.svg";
 import { Icon } from "@iconify/react";
 import "./Navbar.css";
-import BrandButton from "../../Components/BrandButton";
-import BrandButton_2 from "../../Components/BrandButton_2";
-import homeMegaImg from "../../assets/SliderImage/slider.jpg";
-import bargur from "../../assets/FoodPng/hamburger.png";
-import chickenBiriyani from "../../assets/FoodPng/chiken-biriyani.png";
-import polao from "../../assets/FoodPng/polao.png";
-import sandwich from "../../assets/FoodPng/sandwich.png";
+
+import homeMegaImg from "../../assets/Navbar/car.jpg";
+import BrandButton from "../../components/Button/BrandButton";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -131,7 +127,7 @@ const Navbar = () => {
             <div>
               <img src={homeMegaImg} alt="" />
               <h1 className="text-3xl text-center py-5  font-display text-primary">
-                Delicious Food Ideas
+                Beautiful Car Ideas
               </h1>
               <p className="text-center pr-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -139,19 +135,19 @@ const Navbar = () => {
                 impedit rerum temporibus nihil!
               </p>
               <p className="pt-5 pb-10 text-center">
-                <BrandButton_2 text="Purchase Now" />
+                <BrandButton text="Deal with us" />
 
                 {/* home1 and home2 link. It will not be here  */}
-                <Link
+                {/* <Link
                   title="Home1"
                   to="/"
                   className="block text-lg text-brand hover:text-primary hover:translate-x-1 duration-300"
                 >
                   Home1
-                </Link>
+                </Link> */}
 
                 {/* home two */}
-                <li>
+                {/* <li>
                   <Link
                     title="Home2"
                     to="/home2"
@@ -159,12 +155,12 @@ const Navbar = () => {
                   >
                     Home2
                   </Link>
-                </li>
+                </li> */}
               </p>
             </div>
 
             {/* home one and two  */}
-            <li className="lg:col-span-2 px-3 pb-5">
+            {/* <li className="lg:col-span-2 px-3 pb-5">
               <li className="flex justify-between items-center gap-x-16 py-5">
                 <Link className="">
                   <img src={bargur} alt="" className="w-10 mx-auto" />
@@ -235,7 +231,7 @@ const Navbar = () => {
                   <h1>Biriyani</h1>
                 </Link>
               </li>
-            </li>
+            </li> */}
           </ul>
         )}
       </li>
@@ -806,11 +802,11 @@ const Navbar = () => {
             <li className="pr-10">
               {scrolled ? (
                 <Link to="/">
-                  <BrandButton_2 text="Book Table" />
+                  <BrandButton text="Deal with us" />
                 </Link>
               ) : (
                 <Link to="/">
-                  <BrandButton text="Book Table" />
+                  <BrandButton text="Deal with us" />
                 </Link>
               )}
             </li>
